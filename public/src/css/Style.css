@@ -34,7 +34,9 @@
 .infoPanel {
     width: 24%;
     height: 100%;
-    background-color: red;
+    background-color: grey;
+    border: 2px solid black;
+    font-size: large;
     right:5px;
     
 }
@@ -44,6 +46,7 @@
     transform: translateX(-50%) translateY(-50%);
     width: 75vw;
     height:75vh;
-    background-color:greenyellow;
+    border: 2px solid black;
+    background-color:gray;
     overflow-y:scroll;
 }

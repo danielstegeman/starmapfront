@@ -1,6 +1,13 @@
 ﻿<template>
   <div class="interface infoPanel" v-if="selectedStar">
-    <ul>{{selectedStar.proper}}</ul>
+    
+    <ul>{{selectedStar.displayName}}</ul>
+    <ul>{{selectedStar.spect}}</ul>
+    <ul>X : {{selectedStar.x}} Y : {{selectedStar.x}} Z : {{selectedStar.x}}</ul>
+   
+    <ul v-if='selectedStar.compPrimary'>Primary star: {{selectedStar.compPrimary}}</ul>
+    <ul v-if='selectedStar.mag'>Magnitude {{selectedStar.mag}}</ul>
+    <ul>Ablosute magnitude {{selectedStar.absmag}}</ul>
   </div>
   <div class="infoPanel" v-else>No Star Selected</div>
 </template>
@@ -9,10 +16,8 @@
 export default {
   name: "StarInfoScreen",
  
-  data() {
-    return {
-      selectedStar: this.$unityConnector.SelectedStar
-    };
+  props:{
+    selectedStar :null
   },
   created() {
     //axios.get('api/stars/0').then(response => this.star = response)

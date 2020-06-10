@@ -1,22 +1,20 @@
 <template>
   <div id="app">
-  
-    <MapCanvas/>
-   
+    <StarList ></StarList>
   </div>
 </template>
 
 <script>
-    //import StarInfoScreen from './components/StarInfoScreen.vue'
-    import MapCanvas from './components/MapCanvas.vue'
-    
+//import StarInfoScreen from './components/StarInfoScreen.vue'
+//import MapCanvas from './components/MapCanvas.vue'
+import StarList from "./components/StarList.vue";
 
 export default {
-  name: 'app',
-        components: {
-      MapCanvas
-      //StarInfoScreen
+  name: "app",
+  components: {
+    StarList
+    
   }
-}
+};
 </script>
 
