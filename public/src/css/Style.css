@@ -1,8 +1,4 @@
-﻿body {
-    height: 100%;
-    overflow: hidden;
-    margin:0px;
-}
+﻿
 
 #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -12,41 +8,6 @@
     color: #2c3e50;
     /*margin-top: 60px;*/
 }
-.interface {
-    z-index: 1;
-    position: fixed;
-}
 
-#mapArea{
-    width:100%
-}
-#mapScreen{
-    z-index:0;
-}
-#menu {
-    
-    width: 100%;
-    height: 10vh;
-    bottom:0px;
-    background-color: black;
-}
 
-.infoPanel {
-    width: 24%;
-    height: 100%;
-    background-color: grey;
-    border: 2px solid black;
-    font-size: large;
-    right:5px;
-    
-}
-.centerpanel {
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    width: 75vw;
-    height:75vh;
-    border: 2px solid black;
-    background-color:gray;
-    overflow-y:scroll;
-}
+
