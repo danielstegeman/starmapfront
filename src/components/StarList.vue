@@ -4,20 +4,22 @@
       <div v-for="star in this.stars" v-bind:key="star.id">
         <ul>{{star.displayName}} 
             <button v-on:click="setSelectedStar(star)">Select</button>
-            <button>Edit</button>
+            <button v-on:click="this.$modal.show(StarUpdate)">Edit</button>
         </ul>
       </div>
     </div>
+    
     <StarInfoScreen class="interface" v-bind:selectedStar="selectedStar"></StarInfoScreen>
   </div>
 </template>
 <script>
 import StarInfoScreen from "./StarInfoScreen.vue";
-
+import StarUpdate from "./StarUpdate.vue"
 export default {
   name: "StarList",
   components: {
-    StarInfoScreen
+    StarInfoScreen,
+    StarUpdate
   },
   data() {
     return {
